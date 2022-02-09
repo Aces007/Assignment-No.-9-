@@ -2,7 +2,9 @@ import json
 from fpdf import FPDF
 
 with open ('isapang.json', 'r') as f:
-    pass
+    Ayt = f.read()
+    json.loads(Ayt)
+
 
 Resume = FPDF('P', 'mm', 'Letter')
 
@@ -12,7 +14,7 @@ Resume.add_page()
 
 Resume.set_font('times', '', 18)
 
-Resume.cell(200, 25, txt = "Personal Resume", 
+Resume.cell(200, 25, txt = "Curriculum Vitae", 
         ln = 1, align = 'C')
 Resume.cell(200, 1, txt = "Polytechnic University of the Philippines", 
         align = 'C')
