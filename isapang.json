@@ -1,32 +1,24 @@
 [
   {
         "Personal Information": "Personal Information",
-        "Name": "Ace Lawrence Z. Clavano",
-        "Age": "18",
-        "Birthdate": "May 7, 2003",
+        "Name": "Sean Paul T. Johnson",
+        "Phone Number": "202-555-0121",
+        "Nickname": "Paulie",
+        "Age": "37",
+        "Birthdate": "January, 20, 1985",
         "Sex": "Male",
-        "Email": "clavanoistong@gmail.com",
-        "Permanent Address": "Central Bicutan, Taguig City",
+        "Email": "seanparker20@yahoo.com",
+        "WorkEmail": "parkerpaul@gmail.com",
+        "Permanent Address": "Hollywood, California, USA",
         "Civil Status": "Single",
         "Religion": "Roman Catholic",
-        "Hobbies": [
-          "Weight Lifting",
-          "Netflix & Chill",
-          "Eating",
-          "Sleeping"],
-        "Education": [
-          {
-            "Institution": "Upper Bicutan Elementary School",
-            "A.Y": "2009-2015"
-          },
-          {
-            "Institution": "Dr. Arcadio Santos National High School",
-            "A.Y": "2015-2019"
-          },
-          { 
-            "Institution": "Polytechnic University of the Philippines",
-            "A.Y": "2019-Present"
-          }
-        ]
-      }
-    ]  
+        "Hobbies": ["Weight Lifting","Eating","Sleeping"],
+        "Skills": ["Communicating", "Time Management", "Organizing", "Detail Minded", "Creative"],
+        "Father": "Stanley K. Johnson",
+        "Occupation": "Hotel Manager",
+        "Mother": "Quinn T. Thompson",
+        "Brother": "Keldon T. Johnson"
+        }
+      ]
+    
+  
