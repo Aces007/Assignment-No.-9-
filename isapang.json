@@ -1,46 +1,32 @@
-{
-  "Personal Information": [
-    {
-      "Name": "Ace Lawrence Z. Clavano",
-      "Age": "18",
-      "Email": "clavanoistong@gmail.com",
-      "Permanent Address": "Central Bicutan, Taguig City",
-      "Civil Status": "Single",
-      "Hobbies": [
-        "Weight Lifing",
-        "Netflix & Chill",
-        "Eating",
-        "Sleeping"
-      ]
-    }
-  ],
-  "Education": [
-    {
-      "Elementary": "Upper Bicutan Elementary School",
-      "School Address": "General Santos Ave, Lower Bicutan, Taguig, 1632 Metro Manila"
-    },
-    {
-      "High School": "Dr. Arcadio Santos National High School",
-      "School Address": "Km.15, 1700 E Service Rd, Para\u00c3\u00b1aque, 1700 Metro Manila"
-    },
-    {
-      "Senior High School": "Polytechnic University of the Philippines",
-      "School Address": "1016 Anonas, Santa Mesa, Maynila, Kalakhang Maynila"
-    }
-  ],
-  "Family": [
-    {
-      "Father": "Larry T. Clavano",
-      "Age": "43",
-      "Occupation": "Mini Bar Attendant"
-    },
-    {
-      "Mother": "Mary Grace Z. Clavano",
-      "Age": "43"
-    },
-    {
-      "Second Brother": "Tristan Pete Z. Clavano",
-      "Youngest Brother": "Sean Raei Z. Clavano"
-    }
-  ]
-}
+[
+  {
+        "Personal Information": "Personal Information",
+        "Name": "Ace Lawrence Z. Clavano",
+        "Age": "18",
+        "Birthdate": "May 7, 2003",
+        "Sex": "Male",
+        "Email": "clavanoistong@gmail.com",
+        "Permanent Address": "Central Bicutan, Taguig City",
+        "Civil Status": "Single",
+        "Religion": "Roman Catholic",
+        "Hobbies": [
+          "Weight Lifting",
+          "Netflix & Chill",
+          "Eating",
+          "Sleeping"],
+        "Education": [
+          {
+            "Institution": "Upper Bicutan Elementary School",
+            "A.Y": "2009-2015"
+          },
+          {
+            "Institution": "Dr. Arcadio Santos National High School",
+            "A.Y": "2015-2019"
+          },
+          { 
+            "Institution": "Polytechnic University of the Philippines",
+            "A.Y": "2019-Present"
+          }
+        ]
+      }
+    ]  
