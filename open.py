@@ -24,7 +24,7 @@ for BasicInfo in Curri_Vitae:
         Resume.set_font('times', '', 12)
         Resume.cell(76,5, f"Email: {BasicInfo['Email']}", align= 'C', ln=1)
         Resume.ln (12)
-        Resume.line(1, 45, 10000, 0)
+        Resume.line(-1, 45, 10000, 0)
         Resume.set_font('times', 'B', 15)
         Resume.cell(69,5, "Personal Information", align= 'C', ln=1)
         Resume.ln (3)
@@ -40,8 +40,21 @@ for BasicInfo in Curri_Vitae:
         Resume.cell(109.5,8.5, f"Hobbies: {BasicInfo['Hobbies']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
         Resume.cell(178.5,7.5, f"Skills: {BasicInfo['Skills']}", align= 'C', ln=1) 
-
-        
+        Resume.line(-2, 107, 110000, 100)
+        Resume.set_font('times', 'B', 15)
+        Resume.ln(10)
+        Resume.cell(64,5, "Family Information", align= 'C', ln=1)
+        Resume.set_font('times', '', 12)
+        Resume.cell(77.2, 18, f"Father: {BasicInfo['Father']}", align= 'C', ln=1)
+        Resume.set_font('times', '', 12)
+        Resume.cell(78.2, 1.7, f"Occupation: {BasicInfo['Occupation']}", align= 'C', ln=1)
+        Resume.set_font('times', '', 12)
+        Resume.cell(80.2, 18, f"Mother: {BasicInfo['Mother']}", align= 'C', ln=1)
+        Resume.set_font('times', '', 12)
+        Resume.cell(72.5, 1.7, f"Business: {BasicInfo['Business']}", align= 'C', ln=1)
+        Resume.set_font('times', '', 12)
+        Resume.cell(79.2, 18, f"Brother: {BasicInfo['Brother']}", align= 'C', ln=1)
+        Resume.line(-2, 176, 110000, 130)
         
 
 # PDF Name Format
