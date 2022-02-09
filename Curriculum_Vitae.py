@@ -79,6 +79,3 @@ for BasicInfo in Curri_Vitae:
 
 # PDF Name Format
 Resume.output('CLAVANO, ACE LAWRENCE.pdf')
-
-
-
