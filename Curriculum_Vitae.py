@@ -35,7 +35,7 @@ for BasicInfo in Curri_Vitae:
         Resume.set_font('times', '', 12)
         Resume.cell(43.5,3.4, f"Age: {BasicInfo['Age']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
-        Resume.cell(92.5,9.8, f"Work Email: {BasicInfo['WorkEmail']}", align= 'C', ln=1)
+        Resume.cell(88.5,9.8, f"Work Email: {BasicInfo['WorkEmail']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
         Resume.cell(63.5,6, f"Civil Status: {BasicInfo['Civil Status']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
