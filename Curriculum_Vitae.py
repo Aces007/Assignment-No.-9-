@@ -9,14 +9,14 @@ Resume.set_auto_page_break(auto = True, margin = 15)
 Resume.add_page()
 
 # Reading
-Curriculum_Vitae = open('isapang.json', 'r')
+Curriculum_Vitae = open('SeanPaul.json', 'r')
 Curri_Vitae = json.load(Curriculum_Vitae)
 Curriculum_Vitae.close()
 
 # Content section
 for BasicInfo in Curri_Vitae:
         Resume.set_font('times', 'B', 20)
-        Resume.cell(272.5,10, f"{BasicInfo['Name']}", align= 'C', ln=True)
+        Resume.cell(270.5,10, f"{BasicInfo['Name']}", align= 'C', ln=True)
         Resume.set_font('times', '', 12)
         Resume.cell(290,5, f"Permanent Address: {BasicInfo['Permanent Address']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
