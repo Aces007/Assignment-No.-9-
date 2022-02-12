@@ -3,18 +3,22 @@ import json
 from fpdf import FPDF
 from ctypes import alignment
 
+
 # Calling PDF Generator, Rules, etc.
 Resume = FPDF('P', 'mm', 'Letter')
 Resume.set_auto_page_break(auto = True, margin = 15)
 Resume.add_page()
+
 
 # Reading
 Curriculum_Vitae = open('SeanPaul.json', 'r')
 Curri_Vitae = json.load(Curriculum_Vitae)
 Curriculum_Vitae.close()
 
+
 # Content section
 for BasicInfo in Curri_Vitae:
+        # First Four Lines (includes: NAME, PERMANENT ADDRESS, PHONE NUMBER, PERSONAL EMAIL, BIRTHDATE)
         Resume.set_font('times', 'B', 20)
         Resume.cell(270.5,10, f"{BasicInfo['Name']}", align= 'C', ln=True)
         Resume.set_font('times', '', 12)
@@ -27,6 +31,9 @@ for BasicInfo in Curri_Vitae:
         Resume.cell(254.7,9, f"Birthdate: {BasicInfo['Birthdate']}", align= 'C', ln=1)
         Resume.ln (5)
         Resume.line(-1, 50, 10000, 0)
+
+
+        # PERSONAL INFORMATION: (NICKNAME, AGE, WORK EMAIL, CIVIL STATUS, HOBBIES, SKILLS)
         Resume.set_font('times', 'B', 15)
         Resume.cell(69,5, "Personal Information", align= 'C', ln=1)
         Resume.ln (3)
@@ -43,6 +50,9 @@ for BasicInfo in Curri_Vitae:
         Resume.set_font('times', '', 12)
         Resume.cell(178.5,7.5, f"Skills: {BasicInfo['Skills']}", align= 'C', ln=1) 
         Resume.line(-2, 107, 110000, 100)
+
+
+        # FAMILY INFORMATION: (FATHER:OCCUPATION, MOTHER:BUSINESS, BROTHER)
         Resume.set_font('times', 'B', 15)
         Resume.ln(8)
         Resume.cell(64,5, "Family Information", align= 'C', ln=1)
@@ -58,6 +68,9 @@ for BasicInfo in Curri_Vitae:
         Resume.cell(79.2, 18, f"Brother: {BasicInfo['Brother']}", align= 'C', ln=1)
         Resume.line(-2, 176, 110000, 130)
         Resume.ln(5.5)
+
+
+        # EDUCATION: (TERTIARY, SECONDARY, PRIMARY)
         Resume.set_font('times', 'B', 15)
         Resume.cell(45,5, "Education", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
@@ -68,6 +81,9 @@ for BasicInfo in Curri_Vitae:
         Resume.cell(111.7, 18, f"Primary: {BasicInfo['Primary']}", align= 'C', ln=1)
         Resume.line(-2, 222, 110000, 158)
         Resume.set_font('times', 'B', 15)
+
+
+        # WORK EXPERIENCE: (JOB, YEARS DONE, DESCRIPTION OF JOB)
         Resume.cell(61,8, "Work Experience", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
         Resume.cell(138,8, f"{BasicInfo['Work Experience']}", align= 'C', ln=1)
