@@ -61,7 +61,7 @@ for BasicInfo in Curri_Vitae:
         Resume.set_font('times', '', 12)
         Resume.cell(78.2, 1.7, f"Occupation: {BasicInfo['Occupation']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
-        Resume.cell(80.2, 18, f"Mother: {BasicInfo['Mother']}", align= 'C', ln=1)
+        Resume.cell(75.2, 18, f"Mother: {BasicInfo['Mother']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
         Resume.cell(72.5, 1.7, f"Business: {BasicInfo['Business']}", align= 'C', ln=1)
         Resume.set_font('times', '', 12)
